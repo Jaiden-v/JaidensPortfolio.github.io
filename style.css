@@ -1,0 +1,1491 @@
+*{
+    /*(Codehal, 2023)*/
+    /*actual webpage*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  /* background-color: aquamarine; */
+  z-index: 0;
+
+   
+  /*
+  scrollbar-color: blue;
+  scrollbar-width: thin;
+
+  */
+   
+}
+
+    /*(Codehal, 2023)*/
+.backgroundDesign{
+    width: 26.5vw;
+    height: 74vh;
+    z-index: 1;
+    /*height: 100%; */
+    /*z-index: -100; */
+    background: orange;
+    top: 18vh;
+    left: 125vh;
+    background-image: url('Images/Screenshot\ 2025-06-03\ 191229.png'); /*(Daily Paintworks, n.d.)*/
+    padding: 20px 10%;
+    /*display: flex;*/
+    position:fixed;
+}
+
+  /*(Codehal, 2023)*/
+.koiFish{
+    width: 26.5vw;
+    height: 74vh;
+    /*height: 100%; */
+    z-index: 1;
+
+    top: 18vh;
+    left:70vw;
+
+    /*border: 2px solid #bd2511; */
+
+    /*left: 125vh;*/
+    background-image: url('Images/OrangeKoiFishOnly.png'); /*(Daily Paintworks, n.d.)*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 10%;
+    display: flex;
+    position:fixed;
+
+    /*transition: background-color 0.5s ease; */ /*time of background changing color*/
+
+    transition: background-image 1.5s ease; /*time it takes to change to black and white version of fish*/
+}
+
+.koiFish:hover{
+    
+    /*transform: scale(1); */
+    
+    /*transition: transform 0.3s ease-in-out; */
+
+    cursor: url('Images/BubbleForCursor.png') auto;  /* need to fix custom cursor hover*/
+    
+
+    background-image: url('Images/BlackAndWhiteKoiFish.png');
+
+    background-image: transition ease; /*time it takes to change back to colour version of fish*/
+    width: 26.5vw;
+    height: 74vh;
+
+    transform: scale(1.0);
+    /*transition: transform 3.8s ease; */
+
+    /*animation: koiFishHover infinite; */
+
+    /*background-color: #0d68be; */
+    
+    /*border: 4px solid #bd2511; *//* Change border color when hovering over fish */
+
+    
+
+    /*
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    border: 4px solid #bd2511; */ /* Change border color on hover */
+    /*background-color: whitesmoke; */
+}
+
+@keyframes koiFishHover{
+    0%{
+        transition: 0.9s ease-in-out;
+    }
+     25%{
+        transition: 0.6s ease-in-out;
+    }
+     50%{
+        transition: 0.4s ease-in-out;
+    }
+     75%{
+        transition: 0.2s ease-in-out;
+    }
+     100%{
+        transition: 0.1s ease-in-out;
+    }
+}
+
+
+    /*(Codehal, 2023)*/
+body
+{
+    background: rgb(10, 10, 10);
+    color: #dfdada;
+}
+
+    /*(Codehal, 2023)*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #bd2511;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*red nav bar at top, made it 500 
+    so it places above everything when person scrolls*/
+    z-index: 500;
+}
+
+header{
+    /*Header Id name instead of class*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #e8cda8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*red nav bar at top, made it 500 
+    so it places above everything when person scrolls*/
+    z-index: 500;
+
+    transition: top 0.5s; /*(Debular Websites,2023)*/
+}
+
+    /*(Codehal, 2023)*/
+.logo{
+    font-size: 25px;
+
+    /*width:100px;
+    height: 50px; */
+
+    color: #dfdada;
+    text-decoration: none;  /*remove underline*/
+    font-weight: 400;
+
+}
+
+.logo:hover{
+    font-size: 25px;
+    color: #cfc1a4;
+    text-decoration: none;  /*remove underline*/
+    font-weight: 400;
+    outline: 2px solid black;
+
+}
+
+.logoPortfolio{
+    font-size: 25px;
+
+    width:100px;
+    height: 50px;
+
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #dfdada;
+    text-decoration: none;  /*remove underline*/
+    font-weight: 400;
+    background-image: url('Images/JTR.png');
+
+}
+
+.logoPortfolio:hover{
+     font-size: 25px;
+    color: #cfc1a4;
+    text-decoration: none;  /*remove underline*/
+    font-weight: 400;
+    
+    background-image: url('Images/JTRenecase.png');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: ease-in-out 0.4s;  
+    animation: logoHover 0.5s;
+}
+
+@keyframes logoHover{
+    0%{
+        transform:rotate(0deg);
+    }
+    15%{
+        transform:rotate(15deg);
+    }
+    30%{
+        transform:rotate(60deg);
+    }
+    45%{
+        transform:rotate(120deg);
+    }
+    55%{
+        transform:rotate(150deg);
+    }
+    60%{
+        transform:rotate(180deg);
+    }
+    75%{
+        transform:rotate(230deg);
+    }
+    85%{
+        transform:rotate(300deg)
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .logoPortfolio {
+        width: 80px; /* Adjust width for smaller screens */
+        height: 40px; /* Adjust height for smaller screens */
+    }
+    
+}
+
+    /*(Codehal, 2023)*/
+.navbar a{
+    font-size: 18px;
+    color: #0a0a0a;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 25px;
+    transition: .3s;
+
+    /*z-index: 100; */
+}
+
+    /*(Codehal, 2023)*/
+.navbar a:hover, .navbar a.active{
+    color: #0d68be;
+}
+
+    /*(Codehal, 2023)*/
+.home{
+    min-height: 100vh;
+    /*height: 100vh; */
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+
+    /*ADDED TO TEST MIGHT REMOVE LATER*/
+    position: relative;
+
+    /*background-color: purple; */
+}
+
+    /*(Codehal, 2023)*/
+.home-information{
+    background: #bd2511;
+    background: transparent;
+
+    z-index: 100;
+
+    /*ADDED TO TEST REMOVE LATER*/
+    display: flex;
+    flex-direction: column;
+    min-height: 55vh;
+    margin-top: 0vh;
+
+
+}
+
+/*
+.ScrollDownforNavBar{
+    
+}
+*/
+
+    /*(Codehal, 2023)*/
+.home-information h1.mainHeading{
+    font-weight: 800;
+    font-size: 31px;
+    color: #dfdada;
+    line-height: 1.4;
+}
+
+    /*(Codehal, 2023)*/
+.home-information h2.secondHeading{
+    text-decoration: transparent;
+    font-size: 21px;
+    color: rgb(10, 10, 10);
+}
+
+    /*(Codehal, 2023)*/
+.home-information h3.thirdHeading{
+    font-size: 31px;
+    font-weight: 700;
+    color: #bd2511;
+}
+
+    /*(Codehal, 2023)*/
+.home-information p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0 40px;
+}
+
+    /*(Codehal, 2023)*/
+.home-information div.btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    /* background: rgb(183, 6, 6); */
+}
+
+    /*(Codehal, 2023)*/
+.btn-box a{
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #0d68be;
+    border: 2px solid #0d68be;
+    border-radius: 8px;
+    font-size: 19px;
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden; /*hides red bar from going past/overlapping blue box of the button*/
+    transition: .5s;
+}
+
+    /*(Codehal, 2023)*/
+.btn-box a:hover{
+    color: #0d68be;
+
+}
+
+    /*(Codehal, 2023)*/
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #0d68be;
+}
+
+    /*(Codehal, 2023)*/
+.btn-box a:nth-child(2):hover{
+    color: rgb(10, 10, 10);
+}
+
+    /*(Codehal, 2023)*/
+.btn-box a:nth-child(2)::before{
+    background: #0d68be;
+
+}
+
+    /*(Codehal, 2023)*/
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(10, 10, 10); /*change background colour of bar when mouse hovers over*/
+    z-index: -1;
+    transition: .5s;
+}
+
+    /*(Codehal, 2023)*/
+.btn-box a:hover:before{
+    width:100%;
+}
+
+    /*(Codehal, 2023),(Boxicons, n.d.) */ 
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    /* background: rgb(183, 6, 6); */
+    display: flex;
+    justify-content: space-between;
+}
+
+    /*(Codehal, 2023), (Boxicons, n.d.) */
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0d68be;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0d68be;
+    text-decoration: none;
+}
+
+
+#boxContainer{
+    width: 95vw;
+    height: 100vh;
+    background-color: red;
+    /*Reminder-0 places lower than 100 on index*/
+    z-index: 100;
+    border: 1px solid black;
+
+     margin: 20px auto;
+
+    /*
+    margin: 200px auto 0 auto;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    */
+
+    position:relative
+}
+
+.aboutTitle{
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.backToHomeButton{
+
+
+    width: 80px;
+    height: 5vh;
+    /*position: relative; */
+    
+    position: fixed;
+    
+    /*left: 20px;
+    top: 20px; */
+
+    top: 490px;
+    left: 0;
+
+    align-items: center;
+    align-content: center;
+    border-radius: 3%;
+    cursor: pointer;
+
+
+    padding: 0 5%;
+
+    /*
+    top: 490px;
+    left: 300px;
+    */
+
+    /*
+    height: 25vh;
+    */
+
+    display:flex;
+    /* padding: 10 5%; */
+    
+    /*position: absolute; */
+
+} 
+
+
+
+/*BackToHome button styling*/
+
+
+  /*(Codehal, 2023)*/
+.backToHome a{
+    position: relative;
+
+    /*
+    position: absolute;
+    top: 90vh;
+    left: 20px;
+    */
+
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height:30px;
+    /*height: 100%; */
+    background: #0d68be;
+    border: 2px solid #0d68be;
+    border-radius: 8px;
+    font-size: 19px;
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 0;
+    overflow: hidden; /*hides red bar from going past/overlapping blue box of the button*/
+    transition: .5s;
+    
+    /*so the back button is always at bottom of page*/
+    margin-top: 40px;
+}
+
+    /*(Codehal, 2023)*/
+.backToHome a:hover{
+    color: #0d68be;
+
+}
+
+    /*(Codehal, 2023)*/
+.backToHome a:nth-child(2){
+    background: transparent;
+    color: #0d68be;
+}
+
+    /*(Codehal, 2023)*/
+.backToHome a:nth-child(2):hover{
+    color: rgb(10, 10, 10);
+}
+
+    /*(Codehal, 2023)*/
+.backToHome a:nth-child(2)::before{
+    background: #0d68be;
+
+}
+
+    /*(Codehal, 2023)*/
+.backToHome a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(10, 10, 10); /*change background colour of bar when mouse hovers over*/
+    z-index: -1;
+    transition: .5s;
+}
+
+    /*(Codehal, 2023)*/
+.backToHome a:hover:before{
+    width:100%;
+}
+
+
+/*Portfolio Section*/
+
+/*(Beyond Fireship, 2022)*/
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+/*(Beyond Fireship, 2022)*/
+.portfolio{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+/*(Beyond Fireship, 2022)*/
+.show{
+    opacity: 1;
+
+    filter:blur(0);
+    transform: translateX(0);
+   
+    /*
+    transition: opacity 0.5s ease-in-out;
+    /*transition: opacity 0.5s ease-in-out; */
+
+}
+
+/*(Beyond Fireship, 2022)*/
+@media(prefers-reduced-motion){
+    .portfolio{
+        transition: none;
+    }
+}
+
+/*(Beyond Fireship, 2022)*/
+.artworkGallery
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background-color: rgb(10, 10, 10);
+    z-index: 1;
+}
+
+/* LATEST VERSION
+.artworkGallery > div:nth-child(1){
+    transition-delay: 200ms;
+
+}
+
+.artworkGallery > div:nth-child(2){
+    transition-delay: 400ms;
+    
+}
+
+.artworkGallery > div:nth-child(3){
+    transition-delay: 600ms;
+    
+}
+.artworkGallery > div:nth-child(4){
+    transition-delay: 800ms;
+    
+}
+
+.artworkGallery > div:nth-child(5){
+    transition-delay: 1000ms;
+    
+}
+
+*/
+
+/* TEST OF LATEST VERSION
+.artworkGallery > div.show:nth-child(5){
+    transition-delay: 1000ms;
+    
+}
+    */
+
+
+/*OLD*/
+
+/*
+.artworkGallery > div:nth-child(1){
+    transition-delay: 200ms;
+
+}
+
+.artworkGallery:nth-child(2){
+    transition-delay: 400ms;
+    
+}
+
+.artworkGallery:nth-child(3){
+    transition-delay: 600ms;
+    
+}
+.artworkGallery:nth-child(4){
+    transition-delay: 800ms;
+    
+}
+
+.artworkGallery:nth-child(5){
+    transition-delay: 1000ms;
+    
+}
+*/
+
+
+/*fist artwork*/
+
+.portfolioArtwork1
+{
+    width: 50vw;
+    height: 20vh;
+   
+    outline: 3px solid #bd2511;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background-image: url('Images/Screenshot\ 2025-06-09\ 153234.png'); /*(Daily Paintworks, n.d.)*/
+    
+    background-size: cover;
+    /*background-size:contain; */
+    background-repeat: no-repeat;
+    background-position-y:20%;
+    /*background-size: 100% 100%;  */
+    z-index: 1;
+
+    /* transform: 0.3s ease-out, outline 0.3s ease-out; */
+   
+    /*padding: 20px 10%; */
+}
+
+.portfolioArtwork1:hover{
+    outline: 6px solid #0d68be;
+    cursor: pointer;
+
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+
+/*second artwork*/
+.portfolioArtwork2
+{
+    width: 50vw;
+    height: 20vh;
+   
+    outline: 3px solid #bd2511;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background-image: url('Images/SplashPage\ 2025-06-10\ 134843.png'); /*(Daily Paintworks, n.d.)*/
+    margin-top: 20px;
+    
+    background-size: cover;
+    /*background-size:contain; */
+    background-repeat: no-repeat;
+    background-position-y:20%;
+    /*background-size: 100% 100%;  */
+    z-index: 1;
+   
+    /*padding: 20px 10%; */
+}
+
+.portfolioArtwork2:hover{
+    outline: 6px solid #0d68be;
+    cursor: pointer;
+
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+/*third artwork*/
+.portfolioArtwork3
+{
+    width: 50vw;
+    height: 20vh;
+   
+    outline: 3px solid #bd2511;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background-image: url('Images/CardDesigns.png'); /*(Daily Paintworks, n.d.)*/
+    margin-top: 20px;
+    
+    background-size: cover;
+    /*background-size:contain; */
+    background-repeat: no-repeat;
+    background-position-y:20%;
+    /*background-size: 100% 100%;  */
+    z-index: 1;
+   
+    /*padding: 20px 10%; */
+}
+
+.portfolioArtwork3:hover{
+    outline: 6px solid #0d68be;
+    cursor: pointer;
+
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+/*fourth artwork*/
+.portfolioArtwork4
+{
+    width: 50vw;
+    height: 20vh;
+   
+    outline: 3px solid #bd2511;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background-image: url('Images/RobotSpriteSheet.png'); /*(Daily Paintworks, n.d.)*/
+    margin-top: 20px;
+    
+    background-size: cover;
+    /*background-size:contain; */
+    background-repeat: no-repeat;
+    background-position-y:20%;
+    /*background-size: 100% 100%;  */
+    z-index: 1;
+   
+    /*padding: 20px 10%; */
+}
+
+.portfolioArtwork4:hover{
+    outline: 6px solid #0d68be;
+    cursor: pointer;
+
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+/*fifth artwork*/
+.portfolioArtwork5
+{
+    width: 50vw;
+    height: 20vh;
+    outline: 3px solid #bd2511;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background-image: url('Images/KnightConceptArt.png'); /*(Daily Paintworks, n.d.)*/
+    margin-top: 20px;
+    
+    background-size: cover;
+    /*background-size:contain; */
+    background-repeat: no-repeat;
+
+    /*positioning knight head*/
+    background-position-y:55%;
+
+    /*background-size: 100% 100%;  */
+    z-index: 1;
+   
+    /*padding: 20px 10%; */
+}
+
+.portfolioArtwork5:hover{
+    outline: 6px solid #0d68be;
+    cursor: pointer;
+
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+    /*(Codehal, 2023)*/
+.navbar a:hover, .navbar a.active{
+    color: #0d68be;
+}
+
+    /*(Codehal, 2023)*/
+.portfolio{
+    min-height: 100vh;
+    /*height: 100vh; */
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+
+    /*ADDED TO TEST MIGHT REMOVE LATER*/
+    position: relative;
+
+    /*background-color: purple; */
+
+    scrollbar-color: #bd2511;
+    scrollbar-width: thin;
+}
+
+    /*(Codehal, 2023)*/
+.portfolio-information{
+    background: #bd2511;
+    background: transparent;
+
+    z-index: 100;
+
+    /*ADDED TO TEST REMOVE LATER*/
+    display: flex;
+    flex-direction: column;
+    min-height: 55vh;
+    margin-top: 15vh;
+
+}
+
+    /*(Codehal, 2023)*/
+.portfolio-information h1.mainHeading{
+    font-weight: 800;
+    font-size: 31px;
+    color: #dfdada;
+    line-height: 1.4;
+}
+
+    /*(Codehal, 2023)*/
+.portfolio-information h2.secondHeading{
+    text-decoration: transparent;
+    font-size: 21px;
+    color: rgb(10, 10, 10);
+}
+
+    /*(Codehal, 2023)*/
+.portfolio-information h3.thirdHeading{
+    font-size: 31px;
+    font-weight: 700;
+    color: #bd2511;
+}
+
+    /*(Codehal, 2023)*/
+.portfolio-information p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0 40px;
+}
+
+    /*(Codehal, 2023)*/
+.portfolio-information div.backToHome{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 25px;
+    /* background: rgb(183, 6, 6); */
+
+    position: relative;
+    margin-top: 20px; /*to add space between the back button and any element above it*/
+}
+
+/*Portfolio Artwork 1 ZOOMED IN view*/
+
+.portfolioArtwork1Zoomed
+{
+    /*width: 82vw; */
+    width:82vw;
+    height: 80vh;
+    position: flex;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: contain;
+    background-size: auto 100%;
+    background: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it is above all other content */
+
+      
+
+    outline: 3px solid #bd2511;
+   
+    /*display: flex; */
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background-image: url('Images/Screenshot\ 2025-06-09\ 153234.png'); /*(Daily Paintworks, n.d.)*/
+    
+    /*z-index: 1; */
+}
+
+.portfolioArtwork1Zoomed:hover{
+    outline: 6px solid #0d68be;
+    cursor: pointer;
+
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out, outline 0.3s ease-in-out;
+
+    cursor: none; /* Disable cursor when hovering over image, 
+    for more visability */
+}
+
+/*Portfolio Artwork 2 ZOOMED IN view*/
+
+.portfolioArtwork2Zoomed
+{
+    /*width: 82vw; */
+    width:82vw;
+    height: 80vh;
+    position: flex;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: contain;
+    background-size: auto 100%;
+    background: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it is above all other content */
+
+      
+
+    outline: 3px solid #bd2511;
+   
+    /*display: flex; */
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background-image: url('Images/SplashPage\ 2025-06-10\ 134843.png'); /*(Daily Paintworks, n.d.)*/
+    
+    /*z-index: 1; */
+}
+
+.portfolioArtwork2Zoomed:hover{
+    outline: 6px solid #0d68be;
+    cursor: pointer;
+
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out, outline 0.3s ease-in-out;
+
+    cursor: none; /* Disable cursor when hovering over image, 
+    for more visability */
+}
+
+/*Portfolio Artwork 3 ZOOMED IN view*/
+
+.portfolioArtwork3Zoomed
+{
+    /*width: 82vw; */
+    width:82vw;
+    height: 60vh;
+    position: flex;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size:cover;
+
+    background-repeat: infinite;
+    /*background-size: auto 100%; */
+    
+    /*background: no-repeat; */
+    /*background:scroll; */
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it is above all other content */
+
+    outline: 3px solid #bd2511;
+   
+    /*display: flex; */
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background-image: url('Images/CardDesigns.png'); /*(Daily Paintworks, n.d.)*/
+    
+    /*position background image on left side of container, 
+    then when player hovers over it move it to the right side of div container*/
+    /*move background image from left to right*/
+    transition: background-position 1s linear;
+    background-position: left center; /* Start position for the animation */
+    /*z-index: 1; */
+}
+
+.portfolioArtwork3Zoomed:hover{
+    outline: 6px solid #0d68be;
+    cursor: pointer;
+
+    /*Keep background size at 1 and change outline colour/size when hovering */
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out, outline 0.3s ease-in-out;
+
+    /*move actual div container slightly when hovering over image*/
+    animation: moveLeftToRight 1s infinite; /* Animation to move the image right to left */
+    animation-direction: alternate;
+
+    /*move background image to the right when hovering*/
+    transition: background-position 1s linear;
+    background-position: right center; /* End position for the animation */
+
+    cursor: none; /* Disable cursor when hovering over image, 
+    for more visability */
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+/*Portfolio Artwork 4 ZOOMED IN view*/
+
+.portfolioArtwork4Zoomed
+{
+    /*width: 82vw; */
+    width:64vw;
+    height: 80vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: contain;
+    background-size: auto 100%;
+    background: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it is above all other content */
+
+      
+
+    outline: 3px solid #bd2511;
+   
+    /*display: flex; */
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    /*background-image: url('Images/RobotSpriteSheet.png'); */ /*(Daily Paintworks, n.d.)*/
+    
+    /*z-index: 1; */
+}
+
+.portfolioArtwork4Zoomed:hover{
+    outline: 6px solid #0d68be;
+    cursor: pointer;
+
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out, outline 0.3s ease-in-out;
+
+    cursor: none; /* Disable cursor when hovering over image, 
+    for more visability */
+}
+
+.artwork1{
+     background-image: url('Images/RobotSpriteSheet.png'); /*(Daily Paintworks, n.d.)*/
+
+}
+
+.artwork2{
+    background-image: url('Images/GrapplingGameItems.png'); /*(Daily Paintworks, n.d.)*/
+
+}
+
+.artwork3{
+
+    background-image: url('Images/PlatformsAndGameObjects.png'); /*(Daily Paintworks, n.d.)*/
+}
+
+.artwork4{
+    background-image: url('Images/FinalRobotDesign.png'); /*(Daily Paintworks, n.d.)*/
+
+}
+
+
+
+/*Portfolio Artwork 5 ZOOMED IN view*/
+
+.portfolioArtwork5Zoomed
+{
+    /*width: 82vw; */
+    width:82vw;
+    height: 80vh;
+    position: flex;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-size: auto 100%;
+    background: no-repeat;
+    background-position-y: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it is above all other content */
+
+      
+
+    outline: 3px solid #bd2511;
+   
+    /*display: flex; */
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    
+    /*z-index: 1; */
+}
+
+.portfolioArtwork5Zoomed:hover{
+    outline: 6px solid #0d68be;
+    cursor: pointer;
+
+    transform: scale(1.0);
+    transition: transform 0.3s ease-in-out, outline 0.3s ease-in-out;
+
+    cursor: none; /* Disable cursor when hovering over image, 
+    for more visability */
+}
+
+.zoomed5Artwork1{
+    background-image: url('Images/KnightConceptArt.png'); /*(Daily Paintworks, n.d.)*/
+
+}
+
+.zoomed5Artwork2{
+     
+    background-image: url('Images/FantasyCharacterWithRef.png'); /*(Daily Paintworks, n.d.)*/
+    width: 75.2vw;
+
+}
+
+.zoomed5Artwork3{
+     
+    background-image: url('Images/FantasyCharacterWithoutRef.png'); /*(Daily Paintworks, n.d.)*/
+    width: 75.2vw;
+}
+
+
+.artDescription{
+    position: relative;
+    
+    color: #dfdada;
+    text-align: center;
+    margin-top: 0px;
+    z-index: 1001; /* Ensure it is above the zoomed image */
+
+    margin-bottom: 150px;
+}
+
+.artDescription h4{
+    font-weight: bold;
+    font-style: italic;
+    
+    margin-top: 20px;
+}
+
+/*Portfolio Expanded Page - Title of Artwork*/
+
+.portfolio-information h3.portfolioExpandedHeading{
+    position:relative;
+    font-size: 31px;
+    font-weight: 700;
+    text-align: center;
+    color: #bd2511;
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    /*
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    */
+}
+
+/*BackToPortfolio button styling(portfolio expanded page, back button)*/
+
+.backToPortfolio a{
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #0d68be;
+    border: 2px solid #0d68be;
+    border-radius: 8px;
+    font-size: 19px;
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 0;
+    overflow: hidden; /*hides red bar from going past/overlapping blue box of the button*/
+    transition: .5s;
+    
+    /*so the back button is always at bottom of page*/
+    margin-top: auto;
+}
+
+ /*(Codehal, 2023)*/
+.backToPortfolio a:hover{
+    color: #0d68be;
+}
+
+    /*(Codehal, 2023)*/
+.backToPortfolio a:nth-child(2){
+    background: transparent;
+    color: #0d68be;
+}
+
+    /*(Codehal, 2023)*/
+.backToPortfolio a:nth-child(2):hover{
+    color: rgb(10, 10, 10);
+}
+
+    /*(Codehal, 2023)*/
+.backToPortfolio a:nth-child(2)::before{
+    background: #0d68be;
+
+}
+
+    /*(Codehal, 2023)*/
+.backToPortfolio a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(10, 10, 10); /*change background colour of bar when mouse hovers over*/
+    z-index: -1;
+    transition: .5s;
+}
+
+    /*(Codehal, 2023)*/
+.backToPortfolio a:hover:before{
+    width:100%;
+}
+
+.portfolio-information div.backToPortfolio{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 25px;
+    /* background: rgb(183, 6, 6); */
+
+    position: relative;
+    margin-top: 20px; /*to add space between the back button and any element above it*/
+}
+
+/*Contact Page*/
+/*(Home To Web Dev YT,2023)*/
+.contact-form h2{
+    text-align: center;
+    margin-top: 20vh;
+
+    /*margin-top: 0.1em;
+    margin-bottom: 1em; */
+    font-size: 36px;
+}
+
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align:center;
+    margin-bottom: 3em;
+}
+
+.contact-form form .input-box, .contact-form form .input-box select{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input, .contact-form textarea, .contact-form form .input-box select{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    background: rgb(241, 241, 241); /*basically white for background of input text boxes*/
+    border-radius: .8rem;
+    margin: 1em 0;
+    resize: none;
+}
+
+.contact-me:hover{
+    color: #bd2511;
+    transition: 0.8s ease;
+
+}
+
+
+.btn-1{
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 60px;
+    background: #0d68be;
+    border: 2px solid #0d68be;
+    border-radius: 8px;
+    font-size: 19px;
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden; /*hides red bar from going past/overlapping blue box of the button*/
+    transition: .5s;
+}
+
+.btn-1:hover{
+
+    /*Swapping colour of button text and background when hovering over Send Message button*/
+    color: #0d68be;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #bd2511;
+}
+
+.footer .social{
+    text-align:center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a{
+    font-size:24px;
+    color: white;
+    border: 2px solid #bd2511;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px #bd2511, 0 0 10px #bd2511;
+    transition: all 0.3s ease;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color: #0d68be;
+    /*background-color: #bd2511; */
+    box-shadow: inset 0 0 10px #0d68be, 0 0 10px #0d68be;
+    border: 2px solid #0d68be;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+footer ul li{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+
+
+    /*
+    display: inline-block;
+    margin: 0 15px;
+    */
+}
+
+footer ul li a:hover{
+    border-bottom: 3px solid #bd2511;
+
+    /*
+    color: white;
+    text-decoration: none;
+    */
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright{
+    margin-top:15px;
+    text-align:center;
+    font-size: 12px;
+    color: white
+}
+
+/*
+section.contact-page{
+
+}
+*/

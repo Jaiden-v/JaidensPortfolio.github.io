@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+         <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'> <!--(Boxicons, n.d.)-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+ 
+        <header id="header">
+            <a href="#" class="logoPortfolio"></a>
+
+            <nav class="navbar">
+                <a href="#" id="home" onclick="location.href='/index.html'">Home</a>
+                <a href="#" id="about" onclick="location.href='/about.html'">About</a>
+                <a href="#" id="portfolio" onclick="location.href='/portfolio.html'">Portfolio</a>
+                <a href="#" class="active" id="contact" onclick="location.href='/contact.html'">Contact</a>
+            </nav>
+        </header>
+
+         <!--Contact Page for Portfolio-->
+         <!--
+        <section class="home">
+            
+            
+            <div class="home-information">
+                
+                <h3 class="thirdHeading">Contact</h3>
+                
+                <p>My name is Jaiden Renecase and this is my about me page. 
+                <br>Welcome to my portfolio as a Concept Artist. 
+                <br> This webpage showcases some of my personal work made,
+                <br> ranging from various personal and work related drawings.</p>
+
+                <p>Additional placeholder text that will be changed: <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> 
+                enim cum cumque temporibus odio molestiae cupiditate eius commodi. <br> 
+                Quisquam in reiciendis iusto necessitatibus voluptas itaque aliquid soluta.</p>
+
+                          
+            </div>
+
+        
+            
+        </section>
+
+    -->
+
+            <!--(Home To Web Dev YT,2023)-->
+            <!--Contact Page-->
+            <section class="contact-form">
+                <h2 class="contact-me">Contact<span> Me</span></h2>
+
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    
+                    <!--(GreatStack YT, 2023)-->
+                    <!--Access key so i can recieve email and message from user-->
+                    <input type="hidden" name="access_key" value="2de5ff9f-6e19-457c-b548-7368a6a56b75">
+
+                    <div class="input-box">
+                    <input type="text" placeholder="Full Name" name="Name">
+                    <input type="email" placeholder="Email" name="Email">
+                    </div>   
+                    <div class="input-box">
+                    <input type="number" placeholder="Phone Number" name="Number">
+
+                    <!--<div class="regionSelection"> -->
+                    <!--<label for="Region">Region</label> -->
+                    <select name="Region" autofocus>
+                        <option value="" id="regionSelectionText" disabled selected hidden>Please Select Region</option>
+                        <!--<optgroup label="Please Select Region"> -->
+                        <option value="Africa">Africa</option>
+                        <option value="Antarctica">Antarctica</option>
+                        <option value="Australia/Oceania">Australia</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="North America">North America</option>
+                        <option value="South America">South America</option>       
+                    </select>
+                    <!--</div>-->
+
+                    <input type="text" placeholder="Subject" name="Subject">
+                    </div>
+
+                   <!--
+                    Access key so i can recieve email and message from user
+                    <input type="hidden" name="access_key" value="2de5ff9f-6e19-457c-b548-7368a6a56b75">
+                -->
+                    <textarea name="Message" id="" cols="30"
+                    rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn-1">
+                    
+    
+                </form>
+            </section>
+
+            <footer class="footer">
+
+                <div class="social">
+                    <a href="#"><i class='bxr  bx-envelope' onclick="location.href='/index.html'"></i></a>
+                    <a href="#"><i class='bxr  bx-location'></i> </a>
+                    <a href="#"><i class='bx bx-stroke-ink'></i></a>
+                    <a href="#"><i class='bx  bx-pen-alt'></i></a>
+                </div>
+
+                <ul class="list">
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <li>
+                        <a href="#">About Me</a>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+
+                <p class="copyright">© 2025 Jaiden Renecase | All Rights Reserved</p>
+
+            </footer>
+
+
+            
+ <div class="backToHome" onclick="location.href='index.html'">
+                    <a href="#">Back</a>
+                 </div>
+
+        <!--
+        <p class="aboutTitle">This is my Contact Page</p>
+
+        <button class="backToHomeButton" onclick="location.href='index.html'">Back</button>
+        
+
+          <div class="btn-box">
+                    <a href="#">Hire Me</a>
+                    <a href="#">Enquiries</a>
+                </div>
+
+        -->
+        
+        
+    <!--</section> -->
+  
+        <script src="script.js" async defer></script>
+    </body>
+</html>
